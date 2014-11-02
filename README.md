@@ -10,13 +10,13 @@ First, help preserve all the resources the *home server* and to easily navigate 
  - Move the sites using drag'n'drop 
  - Import and export data for use with other devices
 
-[Demo](w3tl.github.io/HomeScreen)
+[Demo](http://w3tl.github.io/HomeScreen)
 
 ###Used libraries
 -
  - [Sortable](http://rubaxa.github.io/Sortable/) - awesome drag'n'drop
  - [jscolor](http://jscolor.com/) - simple color picker
- - [FontAwesome](fortawesome.github.io/Font-Awesome/) - it's ... You know ;)
+ - [FontAwesome](http://fortawesome.github.io/Font-Awesome/) - it's ... You know ;)
 
 ###License
 -
