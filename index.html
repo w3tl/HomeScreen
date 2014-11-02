@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/homescreen.min.js"></script>
+    <script src="js/lib/sortable/Sortable.min.js"></script>
+    <script src="js/lib/jscolor/jscolor.js"></script>
+  </head>
+  <body>
+    <h1 id="b-main-title">
+      <span id="b-main-title__edit" contenteditable="false">Home Screen</span>
+      <span id="b-main-title__edit-icon"><i class="fa fa-pencil"></i></span></h1>
+    <div id="b-additional">
+      <i id="export-button" class="fa fa-inbox"  title="Export"></i>
+      <i id="remove-all" class="fa fa-trash-o fa-2" title="Remove all sites"></i>
+    </div>    
+    <div id="toggle-container">
+      <span id="see-all" class="b-toggle__button b-toggle__button_active" title="See all sites">
+        <i class="fa fa-th"></i> All</span> 
+      <span id="see-favs" class="b-toggle__button" title="See favorites sites">
+        <i class="fa fa-star"></i> Favorites </span></div>
+    <div id="b-main__area">
+      <div id="dragcontainer">
+      </div>
+      <figure id="b-window-add" class="b-window" data-position="1">
+        <a href="#" class="b-window__img-link" title="Add new site">
+          <div data-title="&#xf067;" class="b-window__img"></div>
+          <figcaption class="b-window__title">&nbsp;</figcaption>
+        </a>
+      </figure>
+      
+    <div id="settings">
+      <div class="b-s-top-panel">
+        <span class="b-s-top-panel__main-title">Settings</span>
+        <div class="b-s-top-panel__close"><i class="fa fa-close"></i></div>
+      </div>
+      <div class="b-s-main-panel">
+        <div class="b-s-main-panel__headers">
+          <ul>
+            <li><label id="lbl-opt-title" for="opt-title">Title</label></li>
+            <li><label id="lbl-opt-address" for="opt-address">Address</label></li>
+            <li><label id="lbl-opt-fav" for="opt-fav">Favorites</label></li>
+            <li><label id="lbl-opt-color" for="opt-color">Background</label></li>
+          </ul>
+        </div>
+        <div class="b-s-main-panel__options">
+          <ul>
+            <li><input id="opt-title" type="text"></li>
+            <li><input id="opt-address" type="text"></li>
+            <li><input id="opt-fav" type="checkbox"></li>
+            <li><input id="opt-color" class="color" type="text"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="b-s-bottom-panel">
+        <button id="b-button-save">Save</button>
+      </div>
+    </div>
+      
+    <div id="d-export">
+      <div class="b-s-top-panel">
+        <span class="b-s-top-panel__main-title">Export/Import</span>
+        <div class="b-s-top-panel__close">
+          <i class="fa fa-trash-o" title="Clear text area"></i>
+          <i class="fa fa-close" title="Close window without saving"></i>
+        </div>
+      </div>
+      <textarea id="export-data" placeholder="Paste here..."></textarea>
+      <button id="import" title="Import from text area">
+        <i class="fa fa-cloud-download"></i> Import</button>
+      <button id="export" title="Paste sites from text area">
+        <i class="fa fa-cloud-upload"></i> Export</button>
+    </div>
+  </body>
+</html>
